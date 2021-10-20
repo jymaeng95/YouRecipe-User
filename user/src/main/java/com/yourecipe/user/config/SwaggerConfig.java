@@ -18,7 +18,7 @@ public class SwaggerConfig {
         return new Docket(DocumentationType.SWAGGER_2)
                 .select()
                 .apis(RequestHandlerSelectors.any())            //Swagger API 문서로 만들기 원하는 basePackage 경로
-                .paths(PathSelectors.any())    //URL 경로를 지정하여 해당 URL에 해당하는 요청만 SWAGGER로 만듦
+                .paths(PathSelectors.any())
                 .build();
     }
 
